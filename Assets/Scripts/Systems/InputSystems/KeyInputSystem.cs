@@ -7,7 +7,6 @@ namespace Systems.InputSystems
 {
     public class KeyInputSystem : IEcsPreInitSystem, IEcsRunSystem
     {
-        private EcsWorld _world = null;
         private PlayerInput _inputSystem;
         private EcsFilter<PlayerTag> _filter = null;
 

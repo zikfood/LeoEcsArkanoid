@@ -6,7 +6,6 @@ namespace Systems.CoreSystems.BaseGameplay
 {
     public class SetActiveSystem : IEcsRunSystem
     {
-        private EcsWorld _world = null;
         private EcsFilter<SetActiveEvent> _filter = null;
 
         public void Run()

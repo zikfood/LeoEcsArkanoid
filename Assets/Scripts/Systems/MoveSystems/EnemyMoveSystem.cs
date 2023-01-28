@@ -11,8 +11,7 @@ namespace Systems.MoveSystems
     {
         private EcsFilter<EnemyTag> _filter = null;
         private StaticData _staticData;
-        private EcsWorld _world = null;
-        
+
         private float _moveDelay;
         private float _lastTime;
 

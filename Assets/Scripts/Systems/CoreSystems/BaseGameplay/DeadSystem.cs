@@ -6,7 +6,6 @@ namespace Systems.CoreSystems.BaseGameplay
 {
     public class DeadSystem : IEcsRunSystem
     {
-        private EcsWorld _world = null;
         private EcsFilter<DeadEvent> _filter = null;
 
         public void Run()
