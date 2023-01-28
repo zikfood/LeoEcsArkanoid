@@ -16,6 +16,7 @@ MonoBehaviour:
   ObstaclePrefab: {fileID: 7056919370741185774, guid: 35b8d81345f197146abaabc581b31387, type: 3}
   BulletPrefab: {fileID: 5834607426695114974, guid: 87dab5ed54a431e468616ba66fc28967, type: 3}
   GameOverZonePrefab: {fileID: 2908611562688081531, guid: 82bb9c45b47fa9d44aaa345eab62478c, type: 3}
+  BulletDestroyerPrefab: {fileID: 560312525205846170, guid: 4fbfa4366eaf97f4bafa5f5bc797a67b, type: 3}
   GlobalGravitation: {x: 0, y: 0, z: 0}
   SpawnTimer: 1
   PlayerAddForce: {x: 0.25, y: 0, z: 0}
