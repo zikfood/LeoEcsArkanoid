@@ -17,7 +17,6 @@ namespace Systems.Spawners
 
         public void Init()
         {
-
             _world.NewEntity().Get<SpawnPrefab>() = new SpawnPrefab
             {
                 Prefab = _staticData.BulletPrefab,

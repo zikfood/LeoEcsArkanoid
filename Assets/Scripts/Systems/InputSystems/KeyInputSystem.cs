@@ -14,9 +14,9 @@ namespace Systems.InputSystems
         {
             _inputSystem = new PlayerInput();
             _inputSystem.Enable();
-            _inputSystem.Gameplay.Left.performed += contex => OnLeft(contex);
-            _inputSystem.Gameplay.Right.performed += contex => OnRight(contex);
-            _inputSystem.Gameplay.Shoot.performed += contex => OnShoot(contex);
+            _inputSystem.Gameplay.Left.performed += context => OnLeft(context);
+            _inputSystem.Gameplay.Right.performed += context => OnRight(context);
+            _inputSystem.Gameplay.Shoot.performed += context => OnShoot(context);
         }
 
         public void Run()
@@ -25,7 +25,7 @@ namespace Systems.InputSystems
                 OnRelease();
         }
 
-        private void OnLeft(InputAction.CallbackContext contex)
+        private void OnLeft(InputAction.CallbackContext context)
         {
             foreach (int index in _filter)
             {
@@ -34,7 +34,7 @@ namespace Systems.InputSystems
             }
         }
         
-        private void OnRight(InputAction.CallbackContext contex)
+        private void OnRight(InputAction.CallbackContext context)
         {
             foreach (int index in _filter)
             {
@@ -52,7 +52,7 @@ namespace Systems.InputSystems
             }
         }
         
-        private void OnShoot(InputAction.CallbackContext contex)
+        private void OnShoot(InputAction.CallbackContext context)
         {
             foreach (int index in _filter)
             {
